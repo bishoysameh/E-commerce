@@ -1,0 +1,181 @@
+[{
+  "_id": {
+    "$oid": "656b36c1343bc0a0f31d7e02"
+  },
+  "productType": "Laptops",
+  "productName": "UltraBook X1111",
+  "productPrice": 1299.99,
+  "productDetails": "Thin and lightweight laptop with a powerful processor.",
+  "productPhoto": "https://m.media-amazon.com/images/I/61V7E1gewyL._AC_UL480_FMwebp_QL65_.jpg",
+  "updatedAt": {
+    "$date": "2023-12-08T00:36:05.521Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "656b36c1343bc0a0f31d7e03"
+  },
+  "productType": "Laptops",
+  "productName": "PowerBook 15",
+  "productPrice": 1599.99,
+  "productDetails": "Premium laptop with a high-resolution display and long battery life.",
+  "productPhoto": "https://m.media-amazon.com/images/I/51ZOXEgJAmL._AC_UL480_FMwebp_QL65_.jpg\n"
+},
+{
+  "_id": {
+    "$oid": "656b36c1343bc0a0f31d7e05"
+  },
+  "productType": "Laptops",
+  "productName": "Gaming Titan x",
+  "productPrice": 1900,
+  "productDetails": "High-performance gaming laptop with a dedicated graphics card.",
+  "productPhoto": "https://m.media-amazon.com/images/I/61lYIKPieDL._AC_UL480_FMwebp_QL65_.jpg\n",
+  "updatedAt": {
+    "$date": "2023-12-08T01:00:07.277Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "656b36c1343bc0a0f31d7e06"
+  },
+  "productType": "Laptops",
+  "productName": "Convertible Yoga Flex",
+  "productPrice": 899.99,
+  "productDetails": "2-in-1 convertible laptop with a flexible hinge for multiple modes.",
+  "productPhoto": "https://m.media-amazon.com/images/I/71qWesADafL._AC_UL480_FMwebp_QL65_.jpg\n"
+},
+{
+  "_id": {
+    "$oid": "656b36c1343bc0a0f31d7e0a"
+  },
+  "productType": "Laptops",
+  "productName": "SleekBook Pro",
+  "productPrice": 1399.99,
+  "productDetails": "Sleek and stylish laptop with high-resolution display and premium build.",
+  "productPhoto": "https://m.media-amazon.com/images/I/51PptKyIYbL._AC_UL480_FMwebp_QL65_.jpg\n"
+},
+{
+  "_id": {
+    "$oid": "656b36c1343bc0a0f31d7e0b"
+  },
+  "productType": "Laptops",
+  "productName": "Budget Notebook",
+  "productPrice": 499.99,
+  "productDetails": "Affordable notebook for everyday use with reliable performance.",
+  "productPhoto": "https://m.media-amazon.com/images/I/71AcUeT6dCL._AC_UL480_FMwebp_QL65_.jpg\n"
+},
+{
+  "_id": {
+    "$oid": "656ba6d9a6f4ddeb8a7031b1"
+  },
+  "productType": "Mobiles",
+  "productName": "Apple iPhone 15 Pro Max (256 GB) - Natural Titanium",
+  "productPrice": 1599.99,
+  "productDetails": "Brand: Apple Camera description: Front Cellular technology: 5G Display type: Oled Form factor: Slate Model name: Iphone 14 Operating system: Ios 12",
+  "productPhoto": "https://m.media-amazon.com/images/I/81YQTED1r5L._AC_SX679_.jpg",
+  "camera": "48 MP + 12 MP + 12 MP Rear Camera",
+  "display": "6.7-inch Super Retina XDR display with ProMotion",
+  "processor": "A17 Pro chip, New 6-core CPU with 2 performance and 4 efficiency cores, New 6-core GPU, New 16-core Neural Engine",
+  "battery": "The iPhone 15 Pro Max has a 4,422mAh battery"
+},
+{
+  "_id": {
+    "$oid": "656ba6d9a6f4ddeb8a7031b3"
+  },
+  "productType": "Mobiles",
+  "productName": "Sony Xperia 1 III",
+  "productPrice": 1099.99,
+  "productDetails": "Brand: Sony Camera description: Rear camera technology: 12MP main, 12MP ultra-wide, 12MP periscope telephoto Front Cellular technology: 5G Display type: 4K OLED Form factor: Slate Model name: Xperia 1 III Operating system: Android 11",
+  "productPhoto": "https://m.media-amazon.com/images/I/71YvGj855+L._AC_SX679_.jpg",
+  "camera": "12 MP + 12 MP + 12 MP Rear Camera",
+  "display": "6.5-inch 4K OLED with 120Hz refresh rate",
+  "processor": "Qualcomm Snapdragon 888",
+  "battery": "Li-Po 4500 mAh, non-removable"
+},
+{
+  "_id": {
+    "$oid": "656ba6d9a6f4ddeb8a7031b4"
+  },
+  "productType": "Mobiles",
+  "productName": "Samsung Galaxy S22 Ultra 5G Mobile Phone 256GB",
+  "productPrice": 1000,
+  "productDetails": "It is the first S series phone to include Samsung's S Pen. Specifications are top-notch including 6.8-inch Dynamic AMOLED display with 120Hz refresh rate, Snapdragon 8 Gen 1 processor, 5000mAh battery, up to 12gigs of RAM, and 1TB of storage.",
+  "productPhoto": "https://m.media-amazon.com/images/I/718mMPLo79L._AC_SX679_.jpg",
+  "camera": " Primary: 108 MP 1/1.33″ sensor, 0.8μm pixels, 85-degree field of view",
+  "display": "1440 x 3088 pixels",
+  "processor": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510",
+  "battery": "Li-Ion 5000 mAh, non-removable,5000 mAh"
+},
+{
+  "_id": {
+    "$oid": "656ba6d9a6f4ddeb8a7031b5"
+  },
+  "productType": "Mobiles",
+  "productName": "oppo f7",
+  "productPrice": 300,
+  "productDetails": "The smartphone has a 16-megapixel camera at the back just above the fingerprint scanner and a 25-megapixel selfie camera. Oppo ships the phone with Android 8.1 Oreo with ColorOS 5 on top.",
+  "productPhoto": "https://m.media-amazon.com/images/I/613Tkt37vuL._SY879_.jpg",
+  "camera": "16-megapixel (f/1.8)",
+  "display": "15.82 centimeters (6.23-inch) Full HD+ capacitive touchscreen display with 2280x1080 pixels and 19:9 aspect ratio",
+  "processor": "Android v8.1 Oreo based on Color operating system 5.0 operating system with 2GHz MTK P60 octa core",
+  "battery": "3400 mAH lithium Polymer battery"
+},
+{
+  "_id": {
+    "$oid": "656ba6d9a6f4ddeb8a7031b6"
+  },
+  "productType": "Mobiles",
+  "productName": "Google Pixel 7 Pro",
+  "productPrice": 899,
+  "productDetails": "Brand: Google Camera description: Rear camera technology: 50MP main, 12MP ultra-wide, 48MP telephoto Front Cellular technology: 5G Display type: OLED Form factor: Slate Model name: Pixel 7 Pro Operating system: Android 12",
+  "productPhoto": "https://m.media-amazon.com/images/I/61dV9MxAhlL._AC_SL1500_.jpg",
+  "camera": "50 MP + 12 MP + 48 MP Rear Camera",
+  "display": "6.7-inch OLED with 120Hz refresh rate",
+  "processor": "Google Tensor",
+  "battery": "Li-Ion 4500 mAh, non-removable"
+},
+{
+  "_id": {
+    "$oid": "656ba6d9a6f4ddeb8a7031b7"
+  },
+  "productType": "Mobiles",
+  "productName": "OnePlus 9T",
+  "productPrice": 799,
+  "productDetails": "Brand: OnePlus Camera description: Rear camera technology: 48MP main, 16MP ultra-wide, 5MP macro, 2MP depth Front Cellular technology: 5G Display type: Fluid AMOLED Form factor: Slate Model name: OnePlus 9T Operating system: OxygenOS (Android 11)",
+  "productPhoto": "https://oasis.opstatics.com/content/dam/oasis/page/2022/operation/mar/0317/EU-IN_Green.png",
+  "camera": "48 MP + 16 MP + 5 MP + 2 MP Rear Camera",
+  "display": "6.55-inch Fluid AMOLED with 120Hz refresh rate",
+  "processor": "Qualcomm Snapdragon 870",
+  "battery": "Li-Po 4500 mAh, non-removable"
+},
+{
+  "_id": {
+    "$oid": "656ba6d9a6f4ddeb8a7031b8"
+  },
+  "productType": "Mobiles",
+  "productName": "SAMSUNG Galaxy Z Flip 3 5G Cell Phone",
+  "productPrice": 900,
+  "productDetails": "This item SAMSUNG Galaxy Z Flip 3 5G Cell Phone, Factory Unlocked Android Smartphone, 128GB, Flex Mode, Super Steady Camera, Ultra Compact, US Version, Cream",
+  "productPhoto": "https://m.media-amazon.com/images/I/513ajbeo3OL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+  "camera": "Primary: 12MP 1/1.76″ sensor, 1.8 μm pixels, f/1.8 aperture lens, AF, OIS",
+  "display": "The 6.7-inch display of the Galaxy Z Flip bends around the horizontal axis and has just a small 1.1\" screen on the outside for date/time/notification purposes. Under the hood, the phone offers Snapdragon 855+ with 8GB and 256GB storage.",
+  "processor": "Octa-core, 1x 2.96GHz Kryo 485 + 3x 2.42GHz Kryo 485 + 4x 1.80GHz Kryo 485, 64-bit",
+  "battery": "3300 mAh Li - Polymer Not user replaceable"
+},
+{
+  "_id": {
+    "$oid": "6573d89db8a50ad965cc0874"
+  },
+  "productType": "local",
+  "productName": "local",
+  "productPrice": 0,
+  "productDetails": "local",
+  "productPhoto": "https://m.media-amazon.com/images/I/61V7E1gewyL._AC_UL480_FMwebp_QL65_.jpg",
+  "createdAt": {
+    "$date": "2023-12-09T03:01:49.751Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-09T03:01:49.751Z"
+  },
+  "__v": 0
+}]

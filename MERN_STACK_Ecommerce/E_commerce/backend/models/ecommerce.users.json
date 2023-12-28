@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "656a4eb470c92f1d5fee144c"
+  },
+  "name": "abanoub",
+  "email": "a@gmail.com",
+  "password": "123",
+  "role": 1,
+  "createdAt": {
+    "$date": "2023-12-01T21:23:00.990Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-01T21:23:00.990Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "656bc56186035b549821378f"
+  },
+  "name": "abanoub",
+  "email": "aa@gmail.com",
+  "password": "123",
+  "role": 0,
+  "createdAt": {
+    "$date": "2023-12-03T00:01:37.346Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-03T00:01:37.346Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "656bfa70d8a65ea4b802a852"
+  },
+  "name": "boba",
+  "email": "aaa@gmail.com",
+  "password": "123",
+  "role": 0,
+  "createdAt": {
+    "$date": "2023-12-03T03:48:00.272Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-03T03:48:00.272Z"
+  },
+  "__v": 0
+}]

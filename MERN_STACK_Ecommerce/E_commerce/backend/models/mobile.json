@@ -1,0 +1,72 @@
+[
+  {
+    "productType": "Laptops",
+    "productName": "UltraBook X1",
+    "productPrice": 1299.99,
+    "productDetails": "Thin and lightweight laptop with a powerful processor.",
+    "productPhoto": "ultrabook_x1.jpg"
+  },
+  {
+    "productType": "Laptops",
+    "productName": "PowerBook 15",
+    "productPrice": 1599.99,
+    "productDetails": "Premium laptop with a high-resolution display and long battery life.",
+    "productPhoto": "powerbook_15.jpg"
+  },
+  {
+    "productType": "Laptops",
+    "productName": "Business EliteBook",
+    "productPrice": 1099.99,
+    "productDetails": "Business-class laptop with enhanced security features.",
+    "productPhoto": "business_elitebook.jpg"
+  },
+  {
+    "productType": "Laptops",
+    "productName": "Gaming Titan X",
+    "productPrice": 1899.99,
+    "productDetails": "High-performance gaming laptop with a dedicated graphics card.",
+    "productPhoto": "gaming_titan_x.jpg"
+  },
+  {
+    "productType": "Laptops",
+    "productName": "Convertible Yoga Flex",
+    "productPrice": 899.99,
+    "productDetails": "2-in-1 convertible laptop with a flexible hinge for multiple modes.",
+    "productPhoto": "convertible_yoga_flex.jpg"
+  },
+  {
+    "productType": "Laptops",
+    "productName": "TravelMate Pro",
+    "productPrice": 799.99,
+    "productDetails": "Portable laptop designed for frequent travelers with all-day battery life.",
+    "productPhoto": "travelmate_pro.jpg"
+  },
+  {
+    "productType": "Laptops",
+    "productName": "Student Chromebook",
+    "productPrice": 299.99,
+    "productDetails": "Budget-friendly laptop perfect for students with ChromeOS.",
+    "productPhoto": "student_chromebook.jpg"
+  },
+  {
+    "productType": "Laptops",
+    "productName": "Workstation Precision",
+    "productPrice": 2499.99,
+    "productDetails": "Powerful workstation laptop for demanding professional tasks.",
+    "productPhoto": "workstation_precision.jpg"
+  },
+  {
+    "productType": "Laptops",
+    "productName": "SleekBook Pro",
+    "productPrice": 1399.99,
+    "productDetails": "Sleek and stylish laptop with high-resolution display and premium build.",
+    "productPhoto": "sleekbook_pro.jpg"
+  },
+  {
+    "productType": "Laptops",
+    "productName": "Budget Notebook",
+    "productPrice": 499.99,
+    "productDetails": "Affordable notebook for everyday use with reliable performance.",
+    "productPhoto": "budget_notebook.jpg"
+  }
+]
