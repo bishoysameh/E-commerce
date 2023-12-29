@@ -1,1 +1,1 @@
-E-commerce website with node,react,express,mongooDB (systen analysis course project at faculty).
+E-commerce website with node,react,express,mongooDB (System analysis course project at faculty).
