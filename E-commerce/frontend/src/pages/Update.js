@@ -1,6 +1,9 @@
  import axios from 'axios';
 import { useState , useEffect} from "react";
 import { useNavigate, useParams } from "react-router-dom";
+
+import { useAuthContext } from '../hooks/useAuthContext';
+
 const Update = () => {
 const{id} = useParams();
 
@@ -13,9 +16,13 @@ const [products , setProducts] =useState ({
     productPhoto : ''
 })
 
+const {user} = useAuthContext()
+
 useEffect(() => {
  
-axios.get('/api/products/'+ id)
+axios.get('/api/products/'+ id ,{
+  headers : {'Authorization': `Bearer ${user.token}`}
+})
 .then(res => {
     setProducts({...products ,
                  productTybe : res.data.productTybe ,
@@ -25,7 +32,7 @@ axios.get('/api/products/'+ id)
                   productPhoto : res.data.productPhoto})
 })
 .catch(err => console.log(err))
-},[])
+},[user])
 
 
 const navigate = useNavigate();
@@ -33,8 +40,13 @@ const navigate = useNavigate();
 
 const handleSubmet = (e) => {
 e.preventDefault();
+if(!user){
+  return
+}
 
-axios.put('/api/products/'+ id ,products)
+axios.put('/api/products/'+ id ,products , {
+  headers: {'Authorization': `Bearer ${user.token}`}
+})
 .then(res => {
     navigate('/');
    

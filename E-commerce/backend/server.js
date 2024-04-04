@@ -1,14 +1,19 @@
 const express = require ('express');
 const mongoose = require('mongoose');
 const productRoutes = require('./routes/products');
+const userRoutes = require('./routes/user');
+const cartRoutes = require('./routes/cart')
+
+require('dotenv').config()
+
 
 
 //express app
 const app = express();
 
 //lsa  
- app.use(express.json());
-  app.use(express.Router());
+  app.use(express.json());
+//   app.use(express.Router());
 
 
 //middleware
@@ -17,29 +22,10 @@ app.use((req,res,next)=>{
     next();
 })
 
-
-
-
-
 //routes
 app.use('/api/products', productRoutes)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.use('/api/user', userRoutes)
+app.use('/api/cart' , cartRoutes)
 
 
  

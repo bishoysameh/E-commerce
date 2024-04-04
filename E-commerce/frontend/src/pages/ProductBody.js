@@ -2,13 +2,22 @@
 import axios from "axios";
 import { useState , useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
+import { useAuthContext } from "../hooks/useAuthContext";
+import { useWorkoutsContext } from "../hooks/useCartContext";
 
 
 const ProductBody = () => {
 
-    const [products,setProduct] = useState(null)
-
+    const [product,setProduct] = useState(null)
+      const {user} = useAuthContext()
    const {id} = useParams();
+
+const{dispatch} =useWorkoutsContext()
+  //  const [productTybe, setProductTybe] = useState('')
+  //   const [productName, setProductName] = useState('')
+  //   const [productPrice, setProductPrice] = useState('')
+  //   const [productDetails, setProductDetails] = useState('')
+  //   const [productPhoto, setProductPhoto] = useState('')
 
 
 
@@ -16,22 +25,63 @@ const ProductBody = () => {
 
     useEffect(() => {
         const fetchWorkouts = async () => {
-          const response = await fetch(url)
+          const response = await fetch(url , {
+            headers: {'Authorization': `Bearer ${user.token}`},
+          })
           const json = await response.json()
     
           if (response.ok) {
             setProduct(json)
           }
         }
-    
+       if(user){
         fetchWorkouts()
-      }, [url])
+       }
+      }, [url , user])
     
 
+       const handleAddToCart = async (e) => {
+        e.preventDefault()
+          if(!user){
+            return
+          }
+            //  const cart = { product}
+            const response = await fetch ('/api/cart' , {
+              body:JSON.stringify(product),
+              method:'POST', 
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${user.token}`
+              }
+              })
+              const json = await response.json();
+              // if (!response.ok) {
+              //   // setError(json.error)
+              // }
+              if (response.ok) {
 
+                // setError(null)
+                // setProductTybe('')
+                // setProductName('')
+                // setProductPrice('')
+                // setProductDetails('')
+                // setProductPhoto('')
+                console.log('product added to Cart:', json)
+                dispatch({type: 'CREATE_WORKOUT', payload: json})
+
+              }
+          }
+       
 
       const handleDelete = (id) => {
-         axios.delete('/api/products/'+ id)
+
+        if (!user){
+          return
+        }
+         axios.delete('/api/products/'+ id ,
+         {
+          headers: {'Authorization': `Bearer ${user.token}`},
+         })
          .then(res => console.log(res))
          .then(window.alert("the product is deleted"))
          .catch(err => console.log(err))
@@ -48,21 +98,21 @@ const ProductBody = () => {
 
     
     <div class="article__image">
-      <img src={products && products.productPhoto} alt=""/>
+      <img src={product && product.productPhoto} alt=""/>
     </div>
     <div class="article__info">
-      <h1 class="article__info--title">{products && products.productTybe} {products && products.productName}</h1>
-      <p class="article__info--description">{ products && products.productDetails}</p>
-      <p class="price"><h2>{ products && products.productPrice}$ </h2></p>
+      <h1 class="article__info--title">{product && product.productTybe} {product && product.productName}</h1>
+      <p class="article__info--description">{ product && product.productDetails}</p>
+      <p class="price"><h2>{ product && product.productPrice}$ </h2></p>
       </div>
 
       <a href="./" class="btn-article">add to favorite</a>
-      <a href="./" class="btn-article">add to cart</a>
-      {products && 
-            <Link to= {`./Update/${products._id}`} class="btn-article">update</Link>
+      <a href="./" class="btn-article"  onClick={handleAddToCart}> add to cart</a>
+      {product && 
+            <Link to= {`./Update/${product._id}`} class="btn-article">update</Link>
       }     
-      {products &&
-      <button onClick={() => handleDelete(products._id) } class="btn-article">delete</button>
+      {product &&
+      <button onClick={() => handleDelete(product._id) } class="btn-article" >delete</button>
       }
         
 

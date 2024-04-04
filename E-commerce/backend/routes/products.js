@@ -6,10 +6,14 @@ const { createProduct,
    getProduct,
    deleteProduct,
    updateProduct } = require('../controllers/productController');
+const requireAuth = require('../middleware/requireAuth');
 
-
+  
 
 const router = express.Router();
+
+//middleware to check user is authorized or not by check token
+//router.use(requireAuth)
 
 
   //get all products

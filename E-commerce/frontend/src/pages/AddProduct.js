@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useAuthContext } from "../hooks/useAuthContext"
 
 const AddProduct = () => {
 
@@ -9,9 +10,16 @@ const AddProduct = () => {
     const [productPhoto, setProductPhoto] = useState('')
 
     const [error, setError] = useState(null)
+
+    const {user} = useAuthContext()
   
     const handleSubmit = async (e) => {
       e.preventDefault()
+      if(!user){
+        setError('you must be login')
+        return
+      }
+
   
       const product = {productTybe , productName ,productPrice ,productDetails ,productPhoto}
       
@@ -19,7 +27,8 @@ const AddProduct = () => {
         method: 'POST',
         body: JSON.stringify(product),
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${user.token}`
         }
       })
       const json = await response.json()

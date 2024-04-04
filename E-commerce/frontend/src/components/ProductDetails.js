@@ -1,7 +1,9 @@
   import { Link } from 'react-router-dom';
-const ProductDetails = ({ product }) => {
-  return(
 
+const ProductDetails = ({ product }) => {
+ if (product.productTybe === 'laptop')
+ {
+  return(
    
 <article className="card">
 <Link to = {`./ProductBody/${product._id}`}>
@@ -26,6 +28,6 @@ const ProductDetails = ({ product }) => {
 
     )
   }
-
+}
   export default ProductDetails;
   

@@ -36,10 +36,10 @@ const getProduct = (async (req,res)=>{
 
 //create new product
 const createProduct = (  async (req,res)=>{
-    const  { productTybe, productName , productPrice , productDetails , productPhoto} = req.body;
+    const  { productTybe, productName , productPrice , productDetails , productPhoto ,camera , display , processor ,battery} = req.body;
 
     try {
-       const product = await Product.create({productTybe , productName ,productPrice , productDetails ,productPhoto})
+       const product = await Product.create({productTybe , productName ,productPrice , productDetails ,productPhoto , camera ,display , processor ,battery})
        res.status(200).json(product)
      } catch (error) {
        res.status(400).json({error: error.message})

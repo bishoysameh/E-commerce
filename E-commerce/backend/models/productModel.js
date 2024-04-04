@@ -25,7 +25,11 @@ const productSchema = new Schema({
     productPhoto:{
         type : String,
         required:true
-    }
+    },
+    camera: String,
+    display: String,
+    processor: String,
+    battery: String,
 },{ timestamps: true })
 
 module.exports = mongoose.model('product', productSchema);
